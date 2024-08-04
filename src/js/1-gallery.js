@@ -1,6 +1,6 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-import { images } from "./gallery-info";
+import { images } from "./gallery-info"
 
 
 const galleryList = document.querySelector('.gallery');
