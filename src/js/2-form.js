@@ -34,9 +34,12 @@ function submitForm(event) {
         alert('Fill please all fields');
         return;
     } else console.log(formData);
-    
     form.reset();
     localStorage.removeItem('feedback-form-state');
+    formData = {
+        email: '',
+        message: '',
+    }
 }
 
 form.addEventListener('input', formFillInfo);
