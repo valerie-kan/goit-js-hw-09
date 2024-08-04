@@ -30,6 +30,11 @@ function formFillInfo(event) {
 
 function submitForm(event) {
     event.preventDefault();
+    if (formData.email === '' || formData.message === '') {
+        alert('Fill please all fields');
+        return;
+    } else console.log(formData);
+    
     form.reset();
     localStorage.removeItem('feedback-form-state');
 }
